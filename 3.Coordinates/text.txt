@@ -1,0 +1,11 @@
+#1/The area of the canvas your document intends to use is called the viewport
+ You establish the size of this viewport with the width and height attributes on the <svg> element.
+ <svg width="200px" height="150px">
+ Both of these specify an area 200 pixels wide and 150 pixels tall.
+#2/ Using Default User Coordinates
+ This point, written as (0,0), is also called the origin.
+ ViewBox is the value of this attribute consists of four numbers that represent the minimum x-coordinate, minimum y-coordinate, width, and height of the user coordinate 
+ system you want to uperimpose on the viewport
+ 
+
+

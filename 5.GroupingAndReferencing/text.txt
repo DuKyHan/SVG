@@ -1,0 +1,12 @@
+#1. The <g> Element
+The <g> element gathers all of its child elements as a group and often has an id attribute
+to give that group a unique name.
+#2 The <use> Element
+Once you have defined a group of graphic objects, you can display them again with the
+<use> tag
+Using xlink:href="#id"
+#3 The <defs> Element
+allow override attributes, and modify a position
+#4 The <symbol> Element
+#5 The <image> Element
+    <image xlink:href="kwanghwamun.jpg" x="72" y="92"  width="160" height="120"/> 

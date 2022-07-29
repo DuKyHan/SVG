@@ -1,0 +1,6 @@
+#1.CSSInline
+#2.Internal Stylesheets
+#3. External Stylesheet
+## Presentation Attributes
+ <circle cx="10" cy="10" r="5" style="fill: red; stroke:black; stroke-width: 2;"/>
+ or <circle cx="10" cy="10" r="5" fill="red" stroke="black" stroke-width="2"/>

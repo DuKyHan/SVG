@@ -1,0 +1,42 @@
+moveto: a capital M followed by an x- and y-coordinate.This command sets the current location of the “pen” that’s
+drawing the outline.
+lineto: a capital L followed by an x- and y-coordinate. Draw the line
+closepath:  a capital Z ,  draw a straight line back to the beginning point of the current subpath.
+ellipse arc: 
+<!-- northern hemisphere -->
+<path d="M (cx - rx) cy
+ A rx ry 0 1 1 (cx + rx) cy"/>
+<!-- southern hemipshere -->
+<path d="M (cx - rx) cy
+ A rx ry 0 1 0 (cx + rx) cy"/>
+<!-- eastern hemisphere -->
+<path d="M cx (cy - ry)
+ A rx ry 0 1 1 cx (cy + ry)"/>
+<!-- western hemisphere -->
+<path d="M cx (cy - ry)
+ A rx ry 0 1 0 cx (cy + ry)"/>
+### Summary
+M m     (x,y)    Move to given coordinates
+L l     (x,y)    Draw a line to the given coordinates. You may supply multiple sets of coordinates to draw a polyline. 
+H h     (x)      Draw a horizontal line to the given x-coordinate.
+V v     (y)     Draw a vertical line to the given x-coordinate
+A a     (rx ry x-axis-rotation large-arc sweep x y). Draw an elliptical arc from the current point to (x,y). The points are on
+an ellipse with x-radius rx and y-radius ry. The ellipse is rotated
+x-axis-rotation degrees. If the arc is less than 180 degrees,
+large-arc is 0; if greater than 180 degrees, large-arc is 1. If the
+arc is to be drawn in the positive direction, sweep is 1; otherwise it is 0.
+Q q (x1 y1 x y) Drawaquadratic Bézier curve from the current point to (x,y) using control point (x1,y1).
+T t (x,y)   Draw aquadratic Bézier curvefromthecurrentpoint to(x,y).Thecontrol
+point will be the reflection of the previous Q command’s control point. If
+there is no previous curve, the current point will be used as the control
+point.
+C c (x1 y1 x2 y2 x y) Draw a cubic Bézier curve from the current point to (x,y) using control
+point (x1,y1) as the control point for the beginning of the curve and
+(x2,y2) as the control point for the endpoint of the curve
+S s (x2 y2 x y) Draw a cubic Bézier curve from the current point to (x,y), using (x2,y2)
+as the control point for this new endpoint. The first control point will be
+the reflection of the previous C command’s ending control point. If there
+is no previous curve, the current point will be used as the first control
+point.
+
+

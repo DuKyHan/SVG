@@ -1,0 +1,31 @@
+#1.Lines
+ lets you draw a straight line with the <line> element.
+ <line x1="start-x" y1="start-y" x2="end-x" y2="end-y" />
+##Stroke Characteristics
+ stroke-width: width of a line
+ stroke: color of a line
+ stroke-opacity: a value from 0.0 to 1.0
+ stroke-dasharray: nét đứt
+#2.Rectangles
+  <rect x="start-x" y="start-y" width="width-rectangle" height="height-rectangle rx="x-radius" ry="y-radius" />
+#3. Circle And Ellipse
+  <circle cx="center-x" cy="center-y" r="radius" />
+  <ellipse cx="center-x" cy="center-y" rx="radius-x" ry="radius-y" />
+#4. Polygon
+  <polygon points=" x1 y1, x2 y2, ..." />
+  fill-rule: nonzero ...| evenodd ...
+
+## Stroke
+ stroke: The stroke color
+ stroke-width : Width of stroke; may be given as user coordinates or with a length specifier. The stroke
+  width is centered along the abstract grid lines. Default is 1.
+ stroke-opacity: A number ranging from 0.0 to 1.0; 0.0 is entirely transparent; 1.0 is entirely opaque(the default).
+ stroke-dasharray: A series of numbers that tell the length of dashes and gaps with which a line is to be drawn. These numbers are in user coordinates only. The default value is none
+ stroke-linecap: Shape of the ends of a line; has one of the values butt (the default), round, or square
+ stroke-linejoin: The shape of the corners of a polygon or series of lines; has one of the values miter (pointed; the default), round, or bevel (flat).
+ stroke-miterlimit: Maximum ratio of length of the miter point to the width of the lines being drawn; the default value is 4.
+## Fill
+ fill:  fill-color
+ fill-opacity: A number ranging from 0.0 to 1.0; 0.0 is entirely transparent; 1.0 (the default) is entirely opaque.
+ fill-rule: This attribute can have the values nonzero (the default)or evenodd,which apply
+different rules for determining whether a point is inside or outside a shape.

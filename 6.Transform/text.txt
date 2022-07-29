@@ -1,0 +1,30 @@
+#1 The translate Transformation
+ transform="translate(other-x,other-y)"
+ translate sẽ dịch chuyển ảnh và đưa nó đến vị trí mới (tạo ra tọa độ (0,0) tại chính nó)
+#2 The scale Transformation
+ transform="scale(value)": Multiplies all x- and y-coordinates by the given value.
+ transform="scale(x-value, y-value)": Multiplies all x-coordinates by the given x-value and all y-coordinates by the given
+ y-value.
+#3 The rotate Transformation
+  transform="rotate(45)" xoay cả trục tọa độ xy 
+## transform="translate(-50,-50) scale(2)"
+#4 The skewX and skewY Transformations
+skewX(angle) and skewY(angle): xoay x or y theo 1 góc 
+### Summary
+translate(x, y): Moves the user coordinate system by the specified x and y amounts.
+Note: If you don’t specify a y value, 0 is assumed.
+scale(xFactor, yFactor): Multiplies all user coordinates by the specified xFactor and
+yFactor. The factors may be fractional or negative
+scale(factor): Same as scale(factor, factor).
+rotate(angle): Rotates the user coordinate system by the specified angle. The center
+of rotation is the origin (0,0). In the default coordinate system, angle
+measure increases as you rotate clockwise, with a horizontal line having
+an angle of 0 degrees.
+rotate(angle, centerX, centerY): Rotates the user coordinate system by the specified angle. The center
+of rotation is specified by centerX and centerY
+skewX(angle): Skews all x-coordinates by the specified angle. Visually, this makes
+vertical lines appear at an angle.
+skewY(angle): Skews all y-coordinates by the specified angle. Visually, this makes
+horizontal lines appear at an angle.
+matrix(a b c d e f): Specifies a transformation in the form of a transformation matrix of six
+values.
